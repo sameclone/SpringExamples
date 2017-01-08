@@ -12,6 +12,9 @@ public class JugglerTester {
     public static void main(String[] args) throws PerformanceException {
         ApplicationContext context = new FileSystemXmlApplicationContext("chap2.xml");
 
+
+        Auditorium auditorium = (Auditorium) context.getBean("audotorium");
+        auditorium.concert();
         Stage stage = (Stage)context.getBean("theStage");
 
         Performer performer = (Performer) context.getBean("duke");
@@ -19,5 +22,7 @@ public class JugglerTester {
 
         Performer performer2 = (Performer) context.getBean("duke2");
         performer2.perform();
+
+        auditorium = null;
     }
 }

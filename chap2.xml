@@ -13,5 +13,6 @@
     </bean>
 
     <bean id="theStage" class="springinaction.chap2.Stage" factory-method="getInstance" />
+    <bean id="audotorium" class="springinaction.chap2.Auditorium" init-method="turnOnLights" destroy-method="turnOffLights" />
 
 </beans>
