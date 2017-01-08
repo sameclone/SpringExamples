@@ -11,6 +11,9 @@ import springinaction.chap2.exceptions.PerformanceException;
 public class JugglerTester {
     public static void main(String[] args) throws PerformanceException {
         ApplicationContext context = new FileSystemXmlApplicationContext("chap2.xml");
+
+        Stage stage = (Stage)context.getBean("theStage");
+
         Performer performer = (Performer) context.getBean("duke");
         performer.perform();
 

@@ -12,4 +12,6 @@
         <constructor-arg ref="sonnet29"/>
     </bean>
 
+    <bean id="theStage" class="springinaction.chap2.Stage" factory-method="getInstance" />
+
 </beans>
