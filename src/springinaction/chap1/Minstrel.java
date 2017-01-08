@@ -1,4 +1,4 @@
-package springinaction;
+package springinaction.chap1;
 
 /**
  * Created by Monk on 08.01.2017.

@@ -2,13 +2,13 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
-    <bean id="knight" class="springinaction.BraveKnight">
+    <bean id="knight" class="springinaction.chap1.BraveKnight">
         <constructor-arg ref="quest" />
     </bean>
 
-    <bean id="quest" class="springinaction.SlayDragonQuest" />
+    <bean id="quest" class="springinaction.chap1.SlayDragonQuest" />
 
-    <bean id="minstrel" class="springinaction.Minstrel" />
+    <bean id="minstrel" class="springinaction.chap1.Minstrel" />
 
      <aop:config>
         <aop:aspect ref="minstrel">
